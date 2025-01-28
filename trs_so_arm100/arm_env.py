@@ -6,7 +6,7 @@ from gymnasium import spaces
 
 class ArmEnv(gym.Env):
     def __init__(self):
-        self.model = mujoco.MjModel.from_xml_path('ecene5.xml')
+        self.model = mujoco.MjModel.from_xml_path('scene5.xml')
         self.data = mujoco.MjData(self.model)
         self.viewer = None
 
